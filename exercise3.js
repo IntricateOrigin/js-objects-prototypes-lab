@@ -1,47 +1,21 @@
 // Name: Kyle Gladden
 // Assessment: Lab#1
 
-const student = {
-    firstName: 'John',
-    lastName: 'Doe',
-    studentId: '12345',
-    courses: [],
+const numbers = [1, 2, 3, 4, 5];
 
-    getFullName(){
-        return `${this.firstName} ${this.lastName}`;
-    },
+//variable containing an squared version of the values in the numbers array
+const squared = numbers.map(num => num*num);
 
-    enrollCourse(courseName) {
-        this.courses.push(courseName);
-    },
+//Variable containing even values from the array
+const evens = numbers.filter(num => num%2 == 0);
 
-    getCourseCount(){
-        return this.courses.length;
-        }
-    };
+//Sums each value in the array together
+const sum = numbers.reduce((total, sum) => {
+    
+    return total + sum;
 
-const book = {
-    title: `JavaScript: The Good Parts`,
-    author: `Douglas Crockford`,
-    year: 2008,
-    isbn: `978-0596517748`
-};
+}, 0);
 
-function displayProperty(obj, propertyName) {
-    console.log(`${propertyName}: ${obj[propertyName]}`);
-}
-
-function updateProperty(obj, propertyName, newValue) {
-    obj[propertyName] = newValue;
-}
-
-
-console.log(student.getFullName());
-student.enrollCourse(`CMPS2212`);
-student.enrollCourse(`MATH2210`);    
-console.log(student.getCourseCount());
-
-displayProperty(book, `title`);
-updateProperty(book, `year`, 2024);
-displayProperty(book, `year`);
-
+console.log("Squared: ", squared);
+console.log("Even numbers: ", evens);
+console.log("Sum: ", sum());
