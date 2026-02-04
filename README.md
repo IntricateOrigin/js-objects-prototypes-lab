@@ -1,0 +1,1 @@
+This lab introduces a glimpse of the capabilities that javascript has such as function declaration, object literals, and protype based inheritance etc.

@@ -8,10 +8,12 @@ const book = {
     isbn: `978-0596517748`
 };
 
+//function that uses the passes object and property name through the parameter to display the value
 function displayProperty(obj, propertyName) {
     console.log(`${propertyName}: ${obj[propertyName]}`);
 }
 
+//uses the newly passed value and updates the given object property name
 function updateProperty(obj, propertyName, newValue) {
     obj[propertyName] = newValue;
 }
