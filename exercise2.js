@@ -1,21 +1,13 @@
 // Name: Kyle Gladden
 // Assessment: Lab#1
 
-const numbers = [1, 2, 3, 4, 5];
+//Function that returns the perimeter
 
-//variable containing an squared version of the values in the numbers array
-const squared = numbers.map(num => num*num);
+const calcPerimeter = function(length, width) {
+    return 2*length + 2*width;
+}
 
-//Variable containing even values from the array
-const evens = numbers.filter(num => num%2 == 0);
 
-//Sums each value in the array together
-const sum = numbers.reduce((total, sum) => {
-    
-    return total + sum;
-
-}, 0);
-
-console.log("Squared: ", squared);
-console.log("Even numbers: ", evens);
-console.log("Sum: ", sum());
+console.log(calcPerimeter(5, 10));
+console.log(calcPerimeter(7, 3));
+console.log(calcPerimeter(4, 4));

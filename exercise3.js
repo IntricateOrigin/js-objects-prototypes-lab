@@ -18,4 +18,8 @@ const sum = numbers.reduce((total, sum) => {
 
 console.log("Squared: ", squared);
 console.log("Even numbers: ", evens);
+<<<<<<< HEAD
 console.log("Sum: ", sum);
+=======
+console.log("Sum: ", sum());
+>>>>>>> main
