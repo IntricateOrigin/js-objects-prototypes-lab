@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 // Name: Kyle Gladden
 // Assessment: Lab#1
 
@@ -21,4 +19,3 @@ const sum = numbers.reduce((total, sum) => {
 console.log("Squared: ", squared);
 console.log("Even numbers: ", evens);
 console.log("Sum: ", sum);
->>>>>>> Stashed changes
